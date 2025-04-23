@@ -1,80 +1,68 @@
-# Contact Form Project
+# Evently
 
-A simple contact form built with Node.js, Express, and Nodemailer for sending emails through Gmail SMTP.
+**Evently** is a lightweight, community-focused web platform for creating, managing, and attending small-scale events like game nights, study groups, and online meetups. Designed for micro-communities, Evently offers a simple alternative to Eventbrite, emphasizing free RSVPs, pre-event discussions, and intuitive event management.
 
-## Description
+## Table of Contents
 
-This project implements a web-based contact form that allows users to send emails directly through a Gmail account. It features a clean user interface and server-side email processing.
+- Features
+- Tech Stack
+- Installation
+- Environment Variables
+- Running the Application
+- API Documentation
+- Testing
+- Deployment
+- Contributing
+- License
 
 ## Features
 
-- Clean and responsive contact form
-- Email functionality using Nodemailer
-- Gmail SMTP integration
-- Form validation
-- Success/error notifications
+Evently provides a streamlined experience for organizing and joining small events (<100 attendees). Key features include:
 
-## Technologies Used
+- **User Authentication & Roles**:
+  - Regular users: Create, join, and manage their own events.
+  - Admins: Moderate all events and users.
+- **Event Creation & Management**:
+  - Create, edit, or delete events with details like title, description, date/time, and location (physical or virtual).
+  - Support for timezone handling and privacy settings (public/private).
+- **RSVP System**:
+  - Users request to join events; owners approve/decline.
+  - Displays RSVP status (pending, approved, declined).
+- **Comment System**:
+  - Pre-event discussion for approved attendees, with moderation by owners/admins.
+- **Event Status**:
+  - Mark events as completed and view attendee lists.
+- **Notifications**:
+  - Frontend alerts for invites and RSVP updates, with dismissible UI.
 
-- Node.js
-- Express.js
-- Nodemailer
-- HTML5
-- CSS3
-- JavaScript (ES6+)
+## Tech Stack
+
+- **Frontend**: Next.js (React-based, with App Router for SSR/SSG)
+- **Backend**: Express (Node.js framework with REST API)
+- **Database**: PostgreSQL (or MongoDB, configurable)
+- **Styling**: Tailwind CSS for responsive, utility-first design
+- **Authentication**: JWT (JSON Web Tokens), with optional OAuth (Google)
+- **Deployment**: Vercel (frontend), AWS/Heroku (backend)
+- **Other Tools**:
+  - date-fns for timezone handling
+  - react-toastify for notifications
+  - Jest for testing
 
 ## Installation
 
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/contact-form.git
-cd contact-form
-```
+Follow these steps to set up Evently locally.
 
-2. Install dependencies
-```bash
-npm install
-```
+### Prerequisites
 
-3. Create `.env` file in the root directory and add your credentials
-```env
-PORT=5000
-USER_EMAIL=your-email@gmail.com
-EMAIL_PASS=your-app-password
-```
+- Node.js (v18 or later)
+- PostgreSQL (or MongoDB)
+- Git
 
-## Gmail Setup
+### Steps
 
-To use Gmail SMTP:
-1. Enable 2-Step Verification in your Google Account
-2. Generate an App Password:
-   - Go to Google Account Settings
-   - Navigate to Security
-   - Under "Signing in to Google," select App Passwords
-   - Generate a new App Password for "Mail"
-   - Use this password in your `.env` file
+1. **Clone the Repository**:
 
-## Usage
-
-1. Start the server
-```bash
-npm start
-```
-
-2. For development with auto-reload
-```bash
-npm run dev
-```
-
-3. Access the form at
-```
-http://localhost:5000
-```
-## Environment Variables
-
-Create a `.env` file with the following variables:
-```env
-PORT=5000
-USER_EMAIL=your-email@gmail.com
-EMAIL_PASS=your-app-password
-```
+   ```bash
+   git clone https://github.com/[your-repo]/evently.git
+   cd evently
+   ```
