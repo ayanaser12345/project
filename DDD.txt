@@ -1,0 +1,19 @@
+DDD = Domain Driven Design
+-> way of building software:
+   -where you focus on the real-world problem (domian)
+ 
+-> Think of it like this: 
+   you are building an app like bank, you first ask: 
+	1- what does your bank do?
+	2- what is an account?
+	3- what is the transaction?
+	4- what are the rules for transferring money?
+domain concepts == Account, Transaction
+
+Now:
+Domian = the subject area or the problem we're solving
+Driven = your software based on domain, not a random code idea (now you don't just make a "USER SERVICE" you desgin based on real banking needs)
+Design = How you structure your code? -to match the domain concepts 
+
+In General:
+لو عملنا بلاتفورم تحفه واحنا عارفين انها تحفه ولما طلعت للنور كانت تحفه هيفضل القرار الاول والاخير انها تحفه لليوزر اللي هيستخدمها عشان كدا 	
